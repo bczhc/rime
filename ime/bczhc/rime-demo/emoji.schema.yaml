@@ -1,0 +1,10 @@
+__build_info:
+  rime_version: 1.8.5
+menu:
+  page_size: 5
+schema:
+  name: emoji
+  schema_id: emoji
+  version: 1
+translator:
+  dictionary: emoji

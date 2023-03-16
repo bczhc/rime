@@ -1,0 +1,55 @@
+__build_info:
+  rime_version: 1.8.5
+engine:
+  processors:
+    - ascii_composer
+    - selector
+    - speller
+    - punctuator
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+menu:
+  alternative_select_keys: "@#$%&_{}\\|"
+  page_size: 5
+punctuator:
+  full_shape:
+    " ": {commit: " "}
+  half_shape:
+    " ": {commit: " "}
+  use_space: true
+schema:
+  author:
+    - "polyhedron<biopolyhedron@gmail.com>"
+  description: |
+    輸入拉丁字母國際集。支持西歐、土耳其、越南、梵文和阿拉伯文轉寫、大部分國際音標
+    特殊字符均用';'爲前加符；上標後加q，下標後加Q；組合上加符f，組合下加符F
+
+    ※※本版dict.yaml採用自動上屏手段，需要更新小狼毫版本至0.9.20或以上！！※※
+
+    如有改進建議，歡迎和作者聯繫！
+
+  name: "拉丁字母混合輸入"
+  schema_id: latin_international
+  version: 2020.05.08
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`1234567890-=[];',./~!^*()+:\"<>?"
+  auto_select: true
+  delimiter: ""
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["拉丁", "英文"]
+translator:
+  comment_format:
+    - "xform/^~(.*)$/$1/"
+  dictionary: latin_international
+  enable_sentence: false
+  enable_user_dict: false

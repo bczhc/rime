@@ -1,0 +1,12 @@
+__build_info:
+  rime_version: 1.8.5
+menu:
+  page_size: 5
+schema:
+  description: |
+    拆字
+
+  name: "拆字"
+  schema_id: chaizi
+translator:
+  dictionary: chaizi
